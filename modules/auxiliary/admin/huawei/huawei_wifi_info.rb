@@ -58,7 +58,8 @@ class Metasploit3 < Msf::Auxiliary
         This module exploits an un-authenticated information disclosure vulnerability in Huawei
         SOHO routers. The module will gather information by accessing the /api pages where
         authentication is not required, allowing configuration changes as well as information
-        disclosure including any stored SMS.
+        disclosure including any stored SMS. One may use this in conjunction with other 
+		vulnerabilities in the router interface like CVE-2014-2968 which is a stored XSS via SMS.
       },
       'License'        => MSF_LICENSE,
       'Author'         =>
